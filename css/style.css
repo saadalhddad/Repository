@@ -1,0 +1,431 @@
+*{  
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contanre
+{  
+    width: 80%;
+     margin: auto;
+}
+
+
+.clear
+{   
+    clear: both;
+}
+
+.overlayer{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+.hover-opacity{
+
+    transition: opacity 0.5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pad-y{   
+    padding:100px 0; 
+   
+}
+
+
+.accssoar-title,
+.accssoar-price{
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* gnaral */
+
+
+/* section header for all page */
+
+.section-header-conact .header-title{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bolder;
+}
+.section-header-conact .line{
+    content: "";
+    width: 40px;
+    display: block;
+    height: 3px;
+    background-color: gold;
+    margin: 10px auto ;
+   
+}
+
+.section-header  span:hover::after {   
+    width: 50px;
+}
+
+
+/* ////////////////////////// */
+/* header */
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.header .logo
+{
+    width: 30%;
+    padding: 10px;
+    float: left;
+    background-size: cover;
+}
+
+.header .logo img{
+
+    width: 90px;
+}
+
+.header .nav 
+{
+    list-style: none;
+    float: right;
+    
+   
+}
+
+.header .nav > li{    
+    float: left;
+    padding: 12px;
+    margin: 10px;
+}
+.header .nav > li > a
+{   
+    color:#fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.header .nav  > li > a.active::after,
+.header .nav > li > a::after{ 
+content: "";
+display: block;
+height: 3px;
+background-color: gold;
+transition: width 0.7s;
+
+}
+
+.header .nav > li > a.active::after{
+    width: 100%;
+}
+
+.header .nav  > li >  a::after{
+    width: 0;
+}
+.header .nav > li > a:hover::after{
+    width: 100%;
+}
+
+
+
+/* home  */
+
+.home
+{
+
+    position: relative;
+    background-image: url(../images/background/background.webp);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.home-contact{ 
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+
+}
+
+.home-contact .home-title{
+
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 40px;
+    margin: 5px;
+    color:  #ffee00;
+
+}
+
+.home-contact .home-dec{   
+
+    color: rgba(201, 201, 201, 0.836);
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.home-contact .btn
+{   
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 21px;
+    border: none;
+    text-transform:capitalize;
+    font-size: 18px
+}
+
+.home-contact .left-btn{ 
+    background-color:gold;
+}
+
+.home-contact .right-btn{ 
+    background-color:#ffff;
+}
+
+
+/* about  */
+
+.about{
+    width: 100%;
+}
+
+.about-contant{
+
+    padding-top:30px ;
+}
+.about-items{
+  
+   border: 2 solid black;
+   display: flex ;
+   justify-content: center;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.about-item{
+    padding: 18px;
+    border: 1px solid rgba(3, 3, 3, 0.651);
+    position: relative;
+    
+}
+/*
+.ltr-effct{
+
+    position: relative;
+}
+.ltr-effct::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+    opacity: width 0.8s;
+    transition: width 0.5s;
+
+}
+
+.about-item:hover::after {
+    width: 100%;
+}
+*/
+.about-item.mrg{  
+
+    margin: 0 20px;
+    transition: opacity 0.5s;
+}
+
+
+.about-item-img{
+     width: 100%; 
+    transition: transform 4s ;
+    height: 55%;
+}
+
+.about-item-img:hover{
+    transform: scale3d(1.1 , 1.1 , 1.5);
+    
+ }
+
+ 
+
+.about-item-title{
+    font-size: 24px;
+    margin: 8px;
+    text-transform: capitalize;
+    padding: 3px;
+    transition: color 0.5s;
+  
+}
+
+
+.about-item-dec{
+    
+    font-size: 18px;
+    line-height: 1.8;
+    color: #999;
+    padding: 10px;
+    margin: 8px;
+    transform: color 0.5s;
+}
+
+
+.about-item-btn{
+    color: #6195ff;
+    text-transform: capitalize;
+    
+}
+
+
+/* earring  */
+
+.earring{
+
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+
+.earring-item{
+    position: relative;
+    width: 30%;
+    float: left;
+    padding: 0 25px;
+    margin: 10px;
+}
+
+.earring-item img{
+    width: 100%;
+}
+
+
+
+.layer-content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+}
+
+
+.layer-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); 
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s  ;
+    
+}
+
+.layer-title{
+    color: #f9f9f9;
+    text-transform: capitalize;
+    padding: 5px;
+
+}
+
+.layer-dec{
+    color: #a9a9a9;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+  
+}
+
+.layer-icon{
+    padding: 10px;
+    background-color: gold;
+}
+
+
+.earring-item:hover .layer-content{
+
+    width: 100%;
+    height: 100%;
+}
+
+.earring-item:hover .layer-info{
+    visibility: visible;
+    opacity:1;
+}
+
+
+
+
+/* bracelets */
+
+.bracelets-item{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.bracelets-item-img{
+    position: relative;
+    margin-top: 20px;
+}
+.bracelets-item-img img{
+    width: 100%;
+    height: 80%;
+    
+}
+.bracelets-itme-scllor  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden; 
+    opacity: 0; 
+    transform: scaleX(0);
+    transition: transform 0.2s , opacity 0.2s 
+}
+
+.bracelets-item-img:hover .bracelets-itme-scllor img{
+    
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.bracelets-item-img:hover .bracelets-itme-scllor .layer-info{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* necklace */
+
